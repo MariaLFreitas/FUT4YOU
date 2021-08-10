@@ -1,0 +1,93 @@
+#cadastro{
+    display: flex;
+    align-items: stretch;
+    width: 100vw;
+    /* background: chocolate; */
+
+}
+aside{
+    font-family: 'Montserrat', sans-serif;;
+    flex: 40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    /* background: cornflowerblue; */
+    margin: -10px;
+
+}
+
+#icon-img{
+    width: 2.1rem;
+    margin: 0.25rem 2.3rem 0.25rem 0.87rem;
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    top: 2.3rem;
+}
+
+img#prim{
+    width: 40vw;
+    height: 100%;
+}
+
+p#img{
+    margin-top: 7.5rem;
+    font: 400 3.2rem 'Montserrat', sans-serif;
+}
+strong{
+    font: 700 3.2rem 'Montserrat', sans-serif;
+}
+
+#pe{
+
+
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-left: 11rem;
+    margin-top: 7.5rem;
+    
+    align-items: center;
+    text-align: start;
+/* corrigir */
+    top: -7.5rem; 
+    width: 450px;
+
+    
+    color: #f0f0f0;
+}
+
+main{
+    font-family: 'Montserrat', sans-serif;
+    flex: 60;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+
+width: 100%;
+max-width: 34rem;
+}
+
+label{
+    margin: 1rem 1rem 0.5rem;
+    display: flex;
+    justify-content: start;
+}
+
+#cad{
+    font: 400 4rem 'Montserrat', sans-serif;
+    color: #0A55A1;
+}
+a{
+    color: black;
+}
