@@ -1,0 +1,22 @@
+.button-google{
+    height: 3rem;
+    width: 24.8rem;
+    border: none;
+    border-radius: 1.5rem ;
+    background: #4381F0;
+    color: #f0f0f0;
+    font: 500 20px 'Montserrat', sans-serif;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    cursor: pointer;
+    border: 0;
+
+
+}
+img#icon{
+    width: 2.1rem;
+    margin: 0.25rem 2.3rem 0.25rem 0.87rem;
+}

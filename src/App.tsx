@@ -1,6 +1,9 @@
+import { Cadastro } from "./Pages/Cadastro";
+import { Home } from "./Pages/Home";
+
 function App() {
   return (
-    <h1>Helloword</h1>
+    <Cadastro></Cadastro>
   );
 }
 
