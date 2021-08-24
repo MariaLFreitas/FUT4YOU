@@ -1,9 +1,13 @@
-import { Cadastro } from "./Pages/Cadastro";
-import { Home } from "./Pages/Home";
+import { Cadastro } from './Pages/Cadastro';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { Login } from './Pages/Login';
 
 function App() {
   return (
-    <Cadastro></Cadastro>
+    <BrowserRouter>
+      <Route path="/cadastro" component={Cadastro}></Route>
+      <Route path="/login" component={Login}></Route>
+    </BrowserRouter>
   );
 }
 
