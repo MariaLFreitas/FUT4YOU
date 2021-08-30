@@ -12,9 +12,20 @@ aside{
     flex-direction: column;
     justify-content: center;
     position: relative;
-    /* background: cornflowerblue; */
+     background: cornflowerblue; 
     margin: -10px;
 
+}
+
+.buttonBack{
+    display: flex;
+    justify-content: start;
+    margin: 0.25rem 2.3rem 0.25rem 0.87rem;
+    width: 70px;
+    position: absolute;
+    top: 33px;
+    background: transparent;
+    border: none !important;
 }
 
 #icon-img{
@@ -40,9 +51,6 @@ strong{
 }
 
 #pe{
-
-
-
     display: flex;
     justify-content: center;
     position: absolute;
@@ -91,3 +99,4 @@ label{
 a{
     color: black;
 }
+
