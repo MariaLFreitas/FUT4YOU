@@ -18,13 +18,18 @@ import '../styles/login.css';
 import { useState } from 'react';
 
 export function Login() {
-    const { login } = useContext(userContext);
+    const { login, user, loginGoogle } = useContext(userContext);
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
 
     const history = useHistory();
 
-
+    async function cadGoogle() {
+        if (!user) {
+            await loginGoogle()
+        }
+        history.push('/times');
+    }
     async function loginWithEmailAndPassword() {
 
         try {
@@ -53,7 +58,7 @@ export function Login() {
                     <div className="content_titulo">
 
                         <p id="cad">Login</p>
-                        <p id="tit">Olá, é ótimo ter você de volta! :)</p>
+                        <p id="tit">Olá, é ótimo ter você de volta!</p>
                     </div>
                     <form>
                         <label htmlFor="">Email</label>
@@ -62,10 +67,10 @@ export function Login() {
                         <Input type="password" onChange={event => setPass(event.target.value)} value={pass} />
                     </form>
                     <Button onClick={loginWithEmailAndPassword} type="submit">Entrar</Button>
-                    <ButtonGoogle>
+                    <ButtonGoogle onClick={cadGoogle}>
                         <img id="icon" src={googleIcon} alt=" logo do Google" />
                         <p>Continuar com o Google</p>
-                    </ButtonGoogle>
+                    </ButtonGoogle >
                     <p>É novo por aqui? <Link to='/cadastro'>Faça seu cadastro</Link></p>
 
                 </div>

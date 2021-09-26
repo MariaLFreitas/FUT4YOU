@@ -1,7 +1,9 @@
 #home{
     display: flex;
     align-items: stretch;
-    width: 100%;
+    width: 1920px;
+    margin: -10px;
+    
     
 } 
 
@@ -31,7 +33,16 @@ header{
     position: absolute;
     color: #f0f0f0;
     z-index: 2;
-    border: #f0f0f0 0.5px solid;
+    /* border: #f0f0f0 0.5px solid; */
+}
+
+.separator{
+    position: absolute;
+    margin-top: 92px;
+    background: #f0f0f0;
+    content: '';
+    width: 100vw;
+    height: 1px;
 }
 
 #titulo{
@@ -92,16 +103,22 @@ header{
     font-weight: 800;
     margin-left: 50px;
     margin-right: 500px;
-    margin-top: 20px;
+    margin-top: 32px;
+    font-size: 24px;
 }
 
 #icone{
     width: 40px;
     margin-left: 50px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .navbartext{
-    font-weight: 500;
+    font-weight: 800;
+    font-size: 22px;
+
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 32px;
+    margin-bottom: 34px;
 }
